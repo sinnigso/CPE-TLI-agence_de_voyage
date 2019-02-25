@@ -1,0 +1,30 @@
+nav a {
+	color : white;
+}
+
+
+nav {
+	color: white;
+	background-image: url(../img/ban.png);
+	height: 324px;
+	width: auto;
+  	font-weight: bold;
+	font-size: 20px;
+}
+
+.menu {
+	justify-content: space-around;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+	list-style: none;
+	padding-top : 292px;
+}
+
+
+
+
+

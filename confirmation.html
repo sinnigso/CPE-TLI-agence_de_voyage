@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src='index.js'></script>
+   
+    <title>Agence de voyage en ligne - B&S corporation</title>
+  </head>
+  <script>
+  function data(){
+    
+    var searchParams = new URLSearchParams(window.location.search);
+    
+    console.log('1');
+    document.getElementById("prenom").innerHTML = searchParams.get("prenom");
+
+    console.log('2');
+    document.getElementById("nom").innerHTML = searchParams.get("nom");
+    console.log('3');
+    document.getElementById("email").innerHTML = searchParams.get("email");
+    document.getElementById("telephone").innerHTML = searchParams.get("telephone");
+    document.getElementById("date_depart").innerHTML = searchParams.get("date_depart");
+    document.getElementById("date_retour").innerHTML = searchParams.get("date_retour");
+    document.getElementById("nb_adultes").innerHTML = searchParams.get("nb_adultes");
+    document.getElementById("nb_enfants").innerHTML = searchParams.get("nb_enfants");
+    document.getElementById("petit_dej").innerHTML = searchParams.get("petit_dej");
+    document.getElementById("prix").innerHTML = searchParams.get("prix");
+  
+  } 
+
+  </script>
+
+  <body onload="data()">
+	<!--NAVBAR-->
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="./index.html">Destinations</a>
+          </li>
+          <li>
+            <a href="./reservations.html">Réservations</a>
+          </li>
+          <li>
+            <a href="./contact.html">A propos & Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+	<h1>Agence de voyage B&S</h1>
+	
+
+	<h2>Ma Réservation : récapitulatif</h2>
+  <div id="reservation">
+  	<p id="resa"><h3>Votre séjour :</h3></p>
+    <p>Prénom : </p><p id="prenom" ></p><br/>
+    <p>Nom : </p><p id="nom"></p><br/>
+    <p>Email : </p><p id="email"></p><br/>
+    <p>Téléphone : </p><p id="telephone"></p><br/>
+    <p>Date de départ : </p><p id="date_depart"></p><br/>
+    <p>Date de retour : </p><p id="date_retour"></p><br/>
+    <p>Nombre d'adultes : 2</p><p id="nb_adultes"></p><br/>
+    <p>Nombre d'enfants : 1</p><p id="nb_enfants"></p><br/>
+    <p>Petit déjeuner inclus : </p><p id="petit_dej"></p><br/>
+    <p>Prix : </p><p id="prix"></p>890 €<br/><br/>
+  </div>
+	
+
+	</body>
+
+	<!--FOOTER-->
+    <footer>
+      
+     
+      <div class="footer">
+
+
+        © AGENCE B&S 2019
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique de confidentialité</a>
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique relative aux cookies</a>
+
+                 
+        <div class="boxes">
+
+          <div id="box1">
+            <ul>
+              <li class="head" id="contact.html"><a href="contact.html">MON COMPTE</a></li>
+              <li><a href="contact.html">Se connecter</a></li>
+              <li>Mot de passe oublié</li>
+              <li>S'inscrire</li>
+            </ul> 
+          </div>
+
+          <div id="box2">
+            <ul>
+              <li class="head"><a href="index.html">NOS DESTINATIONS</a></li>
+			  <li><a href="reservation.html">Afrique</a></li>
+              <li><a href="reservations.html">Amérique</a></li>
+              <li><a href="reservations.html">Asie</a></li>
+              <li><a href="reservations.html">Europe</a></li>
+			  <li><a href="reservations.html">Océanie</a></li>
+
+            </ul>
+          </div>
+
+          <div id="box3">
+            <ul>
+              <li class="head"><a href="contact.html">QUI SOMMES-NOUS ?</a></li>
+              <li><a href="contact.html">Notre équipe</a></li>
+              <li><a href="">Nos agences</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+
+       </div>
+
+     </div>           
+
+
+   </footer>
+    <!-- END FOOTER  -->
+
+
+
+</html>

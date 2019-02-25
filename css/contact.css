@@ -1,0 +1,13 @@
+* {
+
+	font-family : Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	text-decoration:none; 
+	
+}
+
+
+.text , #etatcivil {
+	text-align: justify;
+	padding: 30px;
+}
+

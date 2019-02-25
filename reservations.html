@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+   <script src='index.js'>
+     
+
+   </script>
+    <title>Agence de voyage en ligne - B&S corporation</title>
+  </head>
+  <body>
+  <!--NAVBAR-->
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="./index.html">Destinations</a>
+          </li>
+          <li>
+            <a href="./reservations.html">Réservations</a>
+          </li>
+          <li>
+            <a href="./contact.html">A propos & Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+  <h1>Agence de voyage B&S</h1>
+  
+
+  <h2>Ma réservation de voyage</h2>
+
+  <form action="confirmation.html" method="get">
+    
+    <div>
+      Ma destination :
+      <select id="destination" required>
+        <option value="">--------------------</option>
+        <option value="Californie">Californie</option>
+        <option value="LB">Laguna Beach</option>
+        <option value="Jordanie">Jordanie</option>
+        <option value="SF">San Fransisco</option>
+        <option value="NY">New York</option>
+        <option value="Island">Island</option>
+    </select><br/><br/>
+      Prénom* : 
+      <input type="text" id="prenom" name="prenom" required><br/><br/>
+      Nom* : 
+      <input type="text" id="name" name="nom" required><br/><br/>
+      Adresse mail* :
+      <input type="email" id="email" name="email" required><br/><br/>
+      Téléphone :
+      <input type="text" id="telephone" name="telephone" required><br/><br/>
+      Date de départ* : 
+      <input type="date" id="date_depart" name="date_depart"  onchange="duree_du_sejour()" required><br/><br/>
+      Date de retour* : 
+      <input type="date" id="date_retour" name="date_retour"  onchange="duree_du_sejour()" required><br/><br/>
+      Nombre d'adultes* : 
+      <input type="number" id="nb_adultes" min=0  onchange="my_prix()" required><br/><br/>
+      Nombre d'enfants (-12 ans)* : 
+      <input type="number" id="nb_enfants" min=0 onchange="my_prix()" required><br/><br/>
+      Petit déjeuner compris (+8€ /jour/personne) ? <br/><br/>
+      <input type="radio" name="petit_dej" value="oui" onchange="my_prix()" checked>Oui
+      <input type="radio" name="petit_dej" value="non" onchange="my_prix()" checked>Non<br/><br/>
+  
+      Renseignements complémentaires : <br/><br/>
+      <textarea type="text" name="renseignements" required></textarea><br/><br/>
+
+      Le prix de votre voyage TTC : 
+      <input type="text" id="prix"  ><br/><br/><br/><br/>
+      <input type="submit" onchange="recapitulatif()" value="Envoyer">&nbsp;
+      <input type="reset" value="Effacer"><br/><br/>    
+  
+    </div>
+    </form>
+
+  </body>
+
+  <!--FOOTER-->
+    <footer>
+      
+     
+      <div class="footer">
+
+
+        © AGENCE B&S 2019
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique de confidentialité</a>
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique relative aux cookies</a>
+
+                 
+        <div class="boxes">
+
+          <div id="box1">
+            <ul>
+              <li class="head" id="contact.html"><a href="contact.html">MON COMPTE</a></li>
+              <li><a href="contact.html">Se connecter</a></li>
+              <li>Mot de passe oublié</li>
+              <li>S'inscrire</li>
+            </ul> 
+          </div>
+
+          <div id="box2">
+            <ul>
+              <li class="head"><a href="index.html">NOS DESTINATIONS</a></li>
+        <li><a href="reservation.html">Afrique</a></li>
+              <li><a href="reservations.html">Amérique</a></li>
+              <li><a href="reservations.html">Asie</a></li>
+              <li><a href="reservations.html">Europe</a></li>
+        <li><a href="reservations.html">Océanie</a></li>
+
+            </ul>
+          </div>
+
+          <div id="box3">
+            <ul>
+              <li class="head"><a href="contact.html">QUI SOMMES-NOUS ?</a></li>
+              <li><a href="contact.html">Notre équipe</a></li>
+              <li><a href="">Nos agences</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+
+       </div>
+
+     </div>           
+
+
+   </footer>
+    <!-- END FOOTER  -->
+
+
+
+</html>

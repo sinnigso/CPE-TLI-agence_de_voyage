@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+   
+    <title>Agence de voyage en ligne - B&S corporation</title>
+  </head>
+  <body>
+	<!--NAVBAR-->
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="./index.html">Destinations</a>
+          </li>
+          <li>
+            <a href="./reservations.html">Réservations</a>
+          </li>
+          <li>
+            <a href="./contact.html">A propos & Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+</body>
+	<!--FOOTER-->
+    <footer>
+      
+     
+      <div class="footer">
+
+
+        © AGENCE B&S 2019
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique de confidentialité</a>
+        <span class="linkDivider">|</span>
+        <a href="index.html">Politique relative aux cookies</a>
+
+                 
+        <div class="boxes">
+
+          <div id="box1">
+            <ul>
+              <li class="head" id="contact.html"><a href="contact.html">MON COMPTE</a></li>
+              <li><a href="contact.html">Se connecter</a></li>
+              <li>Mot de passe oublié</li>
+              <li>S'inscrire</li>
+            </ul> 
+          </div>
+
+          <div id="box2">
+            <ul>
+              <li class="head"><a href="index.html">NOS DESTINATIONS</a></li>
+			  <li><a href="reservation.html">Afrique</a></li>
+              <li><a href="reservation.html">Amérique</a></li>
+              <li><a href="reservation.html">Asie</a></li>
+              <li><a href="reservation.html">Europe</a></li>
+			  <li><a href="reservation.html">Océanie</a></li>
+
+            </ul>
+          </div>
+
+          <div id="box3">
+            <ul>
+              <li class="head"><a href="contact.html">QUI SOMMES-NOUS ?</a></li>
+              <li><a href="contact.html">Notre équipe</a></li>
+              <li><a href="">Nos agences</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+
+       </div>
+
+     </div>           
+
+
+   </footer>
+    <!-- END FOOTER  -->
+
+
+
+</html>
